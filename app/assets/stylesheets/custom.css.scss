@@ -4,50 +4,65 @@ $navbar-default-bg: #073815;
 @import "bootstrap";
 
 .center {
-	text-align: center; 
+  text-align: center; 
 }
 
 .jumbotron{
-	background-image: asset-url("cover_image.jpg");
-	background-size: cover;
-	height: 300px;
+  background-image: asset-url("cover_image.jpg");
+  background-size: cover;
+  height: 300px;
 }
 #logo{
-	float: left;
-	font-size: 1.7rem;
-	color: #fff;
-	text-transformation: uppercase;
-	letter-spacing: -1px;
-	font-weight: bold;
+  float: left;
+  font-size: 1.7rem;
+  color: #fff;
+  text-transformation: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
 }
 
 #logo:hover {
-	color: #fff;
-	text-decoration: none
+  color: #fff;
+  text-decoration: none
 }
 
 .jumbotron h1{
-	color: #fff;
-	text-align: center;
-	margin-botton: 30px;
-	letter-spacing: -1px;
-	font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin-botton: 30px;
+  letter-spacing: -1px;
+  font-weight: bold;
 }
 
 .jumbotron h2{
-	color: #fff;
-	text-align: center;
-	margin-botton: 30px;
-	letter-spacing: -1px;
-	font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin-botton: 30px;
+  letter-spacing: -1px;
+  font-weight: bold;
 }
 
 
 .btn-xlarge{
-	background-color: #073815;
+  background-color: #073815;
 }
 
 .btn-xlarge:hover{
-	color: #fff;
-	text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
+
+.description{
+  margin-top: 0;
+}
+
+.well a {
+  color: #073815;
+}
+
+.colotmatch a{
+  color: #073815;
+}
+.chef-info{
+  margin-top: 15px;
+} 
