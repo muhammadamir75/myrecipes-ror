@@ -33,7 +33,8 @@ class RecipesController < ApplicationController
 
   def update
     if @recipe.update(recipe_params)
-      #handle
+      flash[:success] = "Recipe was updated successfully!"
+      redirect_to recipe_path(@recipe)
     else
       render 'edit'
     end
@@ -42,7 +43,7 @@ class RecipesController < ApplicationController
   def destroy
     Recipe.find(params[:id]).destroy
     flash[:success] = "Recipe was deleted successfully!"
-    redirect_to recipes_path()
+    redirect_to recipes_path
   end
 
   private
@@ -56,7 +57,7 @@ class RecipesController < ApplicationController
     end
 
     def require_same_user
-      if current_chef != @recipe.chef
+      if current_chef != @recipe.chef and !current_chef.admin?
         flash[:danger] = "You can only edit or delete your on recipes!"
         redirect_to recipes_path
       end
